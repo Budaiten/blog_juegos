@@ -3,6 +3,7 @@ from apps.posts.models import Categoria, Post
 from .forms import SignupForm, LoginForm
 from django.contrib.auth import logout
 
+
 def index(request):
     return render(request, 'index.html')
 

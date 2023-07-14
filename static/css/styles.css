@@ -1,0 +1,188 @@
+body {
+	font-family: sans-serif;
+	background-color: black;
+}
+
+/* Barra de navegación */
+
+nav .navbar-brand {
+	color: white;
+}
+
+nav .navbar-brand:hover {
+	color: #DC143C;
+}
+
+#navbarNav li a{
+	color: white;
+}
+
+#navbarNav li a:hover{
+	color: #DC143C;
+}
+
+.navbar-toggler-icon {
+	background-color: #DC143C;
+}
+
+
+
+/* Titulos y Subtitulo del banner */
+.image-caption h1 {
+	font-size: 100px;
+	color: #DC143C;
+	text-shadow: 1px 5px 10px black;
+
+}
+
+.image-caption h2 {
+	font-size: 30px;
+	color: #DC143C;
+	text-shadow: 1px 5px 10px black;
+
+
+}
+
+
+
+/* Tarjeta de presentación */
+.card {
+  max-width: 540px;
+  margin: 400px auto; /* Agrega un margen superior e inferior de 20px y centrado horizontalmente */
+  background-color:  #DC143C;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+}
+
+.card-text {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.text-body-secondary {
+  color: #6c757d;
+}
+
+
+.noticias h2 {
+	font-size: 2rem;
+	line-height: 1.2;
+	text-align: center;
+	max-width: 100%;
+	color: #DC143C;
+	margin-top: 10%;
+}
+
+
+.juegosPopulares h2 {
+	font-size: 2rem;
+	line-height: 1.2;
+	text-align: center;
+	max-width: 100%;
+	color: #DC143C;
+	margin-top: 10%;
+}
+
+
+/*Tarjetas dinamicas*/
+.card-base {
+	position: relative;
+	width: 300px;
+	height: 350px;
+	margin: 20px;
+	display: inline-block;
+}
+
+.card-base .face{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s;
+}
+
+.card-base .front {
+	transform: perspective(600px) rotateY(0deg);
+	box-shadow: 0 5px 10px #DC143C;
+}
+
+.card-base .front img{
+	
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+.card-base .front h3{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	color: #E4E0E1;
+	background-color: rgba(0, 0, 0,.4);
+	text-align: center;
+}
+
+.card-base .back{
+	transform: perspective(600px) rotateY(180deg);
+	background: #DC143C;
+	padding: 15px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: 0 5px 10px #f3f3f3;
+}
+
+.card-base .back link {
+	border-top: solid 1px #f3f3f3;
+	height: 50px;
+	line-height: 50px;
+}
+
+.card-base .back link a{
+	color: white;
+}
+
+.card-base .back h3 {
+	font-size: 30px;
+	margin-top: 20px;
+	letter-spacing: 2px;
+}
+
+.card-base .back p {
+	letter-spacing: 1px;
+
+}
+
+.card-base:hover .front {
+	transform: perspective(600px) rotateY(180deg);
+}
+
+.card-base:hover .back {
+	transform: perspective(600px) rotateY(360deg);
+}
+
+
+
+.footer {
+	background-color: #DC143C;
+}
+
+
+
+

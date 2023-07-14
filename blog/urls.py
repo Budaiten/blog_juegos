@@ -4,6 +4,8 @@ from .views import *
 from django.contrib.auth import views as auth_views
 from .forms import LoginForm
 
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',index, name='index'),
