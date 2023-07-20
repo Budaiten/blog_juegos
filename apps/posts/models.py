@@ -1,7 +1,7 @@
 from typing import Any, Dict, Tuple
 from django.db import models
 from django.utils import timezone
-
+from django.contrib.auth.models import User
 
 #Categoria
 
@@ -22,7 +22,7 @@ class Post(models.Model):
     categoria = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True, default='Sin Categoria')
     imagen = models.ImageField(null=True, blank=True, upload_to='media', default='static/post_default.png')
     publicado = models.DateTimeField(default=timezone.now)
-
+    autor = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True )
     class Meta:
         ordering = ('-publicado',)
 
@@ -31,4 +31,4 @@ class Post(models.Model):
     
     def delete(self, using = None, keep_parents = False):
         self.imagen.delete(self.imagen.name)
-        super().delete()
+        super().delete() 

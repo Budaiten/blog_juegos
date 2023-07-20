@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.urls import path
 from .views import *
+from apps.posts.views import *
 from django.contrib.auth import views as auth_views
 from .forms import LoginForm
 
@@ -10,4 +11,8 @@ urlpatterns = [
     path('login/',auth_views.LoginView.as_view(template_name='login.html',authentication_form=LoginForm, success_url = '/'),name='login'),
     path('logout/', logout_view, name='logout'),
     path('signup/', signup, name='signup'),
+    path('new/', nuevo, name='new'),
+    path('<int:pk>', detalle, name='detalle'),
+    path('<int:pk>/delete/', eliminar, name='delete'),
+    path('<int:pk>/edit/', editar, name='edit'),
 ]
