@@ -34,3 +34,9 @@ def signup(request):
 def logout_view(request):
     logout(request)
     return redirect('index')
+
+
+# Frontend general 
+def frontGeneral(request):
+
+    return render(request,'home.html')
