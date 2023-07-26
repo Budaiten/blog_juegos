@@ -40,3 +40,18 @@ def logout_view(request):
 def frontGeneral(request):
 
     return render(request,'home.html')
+
+# Frontend juegos
+def juegos(request):
+
+    return render(request,'juegos.html')
+
+# Frontend Noticias
+def noticias(request):
+    return render(request,'noticias.html')
+
+
+# Frontend perfil
+
+def perfil(request):
+    return render(request, 'perfil.html')

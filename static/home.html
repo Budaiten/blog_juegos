@@ -1,5 +1,6 @@
 {% load static%}
 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,40 +17,36 @@
 	
 </head>
 <body>
+  
 		<!-- Menu Navbar-->
 		<nav class="navbar navbar-expand-lg bg-black">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Life Indie</a>
+	    <a class="navbar-brand" href="{% url 'home' %}">Life Indie</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+	          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Inicio</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Guias</a>
+	          <a class="nav-link" href="{% url 'juegos' %}">Juegos</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Juegos</a>
+	          <a class="nav-link" href="{% url 'noticias' %}">Noticias</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Noticias</a>
+	          <a class="nav-link" href="{% url 'login' %}">Login / Register</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Posts</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Login / Register</a>
-	        </li>
-	        <li class="nav-item">
-	          <a class="nav-link" href="#">Perfil</a>
+	          <a class="nav-link" href="{% url 'perfil' %}">Perfil</a>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
+
 
 
 	<!--Banner-->
@@ -60,6 +57,7 @@
 			<h2 class="fs-1 fs-sm-6 fs-lg-7">Blog</h2>
 		</div>
 	</div>
+
 
 
 	<!-- Carta de presentación-->
@@ -82,7 +80,7 @@
 	<!-- sección noticias destacadas-->
 
 	<div class="noticias">
-		<h2>Noticias Destacadas</h2>
+		<h2>Noticias de la Semana</h2>
 	</div>
 
 	
@@ -202,7 +200,7 @@
 
   <!-- Footer-->
     <footer class="py-5 bg-danger">
-        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2023</p></div>
+        <div class="container"><p class="m-0 text-center text-white">Copyright &copy; GRUPO 7 | INFORMATORIO</p></div>
     </footer>
    
 
