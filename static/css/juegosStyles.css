@@ -1,0 +1,24 @@
+/* Barra de navegación */
+
+nav .navbar-brand {
+	color: white;
+}
+
+nav .navbar-brand:hover {
+	color: #DC143C;
+}
+
+#navbarNav li a{
+	color: white;
+}
+
+#navbarNav li a:hover{
+	color: #DC143C;
+}
+
+.navbar-toggler-icon {
+	background-color: #DC143C;
+}
+
+
+
